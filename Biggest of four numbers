@@ -1,0 +1,62 @@
+import java.util.Scanner;
+class biggest
+{
+ public static void main(String args[])
+ {
+  Scanner in=new Scanner(System.in);
+  int a,b,c,d;
+  System.out.println("Enter the values of a,b,c,d:");
+  a=in.nextInt();
+  b=in.nextInt();
+  c=in.nextInt();
+  d=in.nextInt();
+  if(a>b)
+  {
+   if(a>c)
+   {
+    if(a>d)
+    {
+     System.out.println("biggest number is"+a);
+     }
+     else
+    {
+      System.out.println("biggest number is"+d);
+     }
+    }
+   }
+   else if(b>c)
+   {
+    if(b>d)
+     {
+     System.out.println("biggest number is"+b);
+     }
+     else
+    {
+      System.out.println("biggest number is"+d);
+     }
+   }
+   else if(c>d)
+    {
+     System.out.println("biggest number is"+c);
+     }
+     else
+    {
+      System.out.println("biggest number is"+d);
+     }
+   in.close();
+  }
+}  
+
+
+
+OUTPUT:
+D:\jyothi>javac biggest.java
+
+D:\jyothi>java biggest
+Enter the values of a,b,c,d:
+99
+89
+90
+111
+biggest number is 111
+

@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class leapyear
+{
+ public static void main(String args[])
+ {
+  Scanner in=new Scanner(System.in);
+  int y;
+  System.out.println("Enter any year:");
+  y=in.nextInt();
+  if(((y % 4 == 0) && (y % 100!= 0)) || (y % 400 == 0))
+  System.out.println("it is a leap year");
+  else
+  System.out.println("it is not a leap year");
+ }
+}
+
+
+
+OUTPUT:
+
+D:\jyothi>javac leapyear.java
+
+D:\jyothi>java leapyear
+Enter any year:
+2001
+it is not a leap year
+
+D:\jyothi>java leapyear
+Enter any year:
+2020
+it is a leap year
